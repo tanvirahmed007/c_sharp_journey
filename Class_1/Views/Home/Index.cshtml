@@ -1,0 +1,46 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @{
+        var result = 10 + 20;
+
+        var x = 20;
+        var y = 10;
+        var mult = x * y;
+
+        int a = 50;
+        int b = 20;
+        int sub = a - b;
+
+        double c = 100.45;
+        double d = 25;
+        double divi = c / d;
+
+        string first_name = "Tanvir";
+        string last_name = "Ahmed";
+        string full_name = first_name + last_name;
+
+        int[] values = { 1, 2, 3, 4, 5, 6 };
+
+    }
+
+    <h1>addition = @result</h1>
+    <hr />
+    <h2>mul = @mult</h2>
+    <hr />
+    <p>sub = @sub</p>
+    <hr />
+    <p>div = @divi</p>
+    <hr />
+    <h4 style="color: red;">Name : @full_name</h4>
+    <hr />
+    <p>@values[0]</p>
+
+</div>
